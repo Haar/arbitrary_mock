@@ -7,13 +7,14 @@ require "arbitrary_mock/version"
 Gem::Specification.new do |s|
   s.name        = "arbitrary_mock"
   s.version     = ArbitraryMock::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
+  s.authors     = ["Robert White"]
+  s.email       = ["robert@terracoding.com"]
   s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of ArbitraryMock."
-  s.description = "TODO: Description of ArbitraryMock."
+  s.summary     = "Basic object for asserting behaviour of classes upon their dependencies"
+  s.description = "Basic series of objects designed to allow you to arbitrarily assign and access properties, for use in conjunction with typical isolated testing style."
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
 
-  s.add_dependency "rails", "~> 4.0.0"
+  s.add_dependency "rails", ">= 2.3.0"
+  s.add_dependency "rspec", ">= 2.0.0"
 end
