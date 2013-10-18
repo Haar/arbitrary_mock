@@ -21,8 +21,8 @@ specific assertions about the way the class functions.
     => "bazquux"
 
 ### Usage
-
-    Model < ArbitraryMock::Base; end
+    # Check if it already exists, if so we don't need to fake it
+    Model = ArbitraryMock::Base unless defined?(Model)
     dependency = Model.new(foo: 'bar')
     Model.stub(new: dependency)
 
