@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = ArbitraryMock::VERSION
   s.authors     = ["Robert White"]
   s.email       = ["robert@terracoding.com"]
-  s.homepage    = "TODO"
+  s.homepage    = "https://github.com/Haar/arbitrary_mock"
   s.summary     = "Basic object for asserting behaviour of classes upon their dependencies"
   s.description = "Basic series of objects designed to allow you to arbitrarily assign and access properties, for use in conjunction with typical isolated testing style."
 
