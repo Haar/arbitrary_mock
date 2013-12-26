@@ -22,7 +22,7 @@ specific assertions about the way the class functions.
 
 ### Usage
     # Check if it already exists, if so we don't need to fake it
-    Model = ArbitraryMock::Base unless defined?(Model)
+    Model ||= ArbitraryMock::Base
     dependency = Model.new(foo: 'bar')
     Model.stub(new: dependency)
 

@@ -17,4 +17,9 @@ describe ArbitraryMock::Base do
     mock.foo << 'bang'
     expect(mock.foo).to match 'barbang'
   end
+
+  it 'allows you to overload a class for isolated settings' do
+    MyClass ||= ArbitraryMock::Base
+    MyClass.new(foo: 'bar').foo.should == 'bar'
+  end
 end
