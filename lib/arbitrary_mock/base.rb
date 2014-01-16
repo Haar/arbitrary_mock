@@ -1,5 +1,5 @@
 module ArbitraryMock
-  class Base < BasicObject
+  class Base
 
     def initialize(property_hash={})
       @property_hash = property_hash
@@ -20,6 +20,10 @@ module ArbitraryMock
 
       setter_method = setter_method_match.captures.first.to_sym
       @property_hash[setter_method] = args[arg_position]
+    end
+
+    def try(*args)
+      self.send *args
     end
   end
 end
