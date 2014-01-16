@@ -1,3 +1,3 @@
 module ArbitraryMock
-  VERSION = '0.1.2.rc1'
+  VERSION = '0.1.2'
 end
