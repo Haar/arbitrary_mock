@@ -30,5 +30,4 @@ specific assertions about the way the class functions.
     expect(dependency.attribute).to match 'some_value'
 
 
-
 This project rocks and uses MIT-LICENSE.
