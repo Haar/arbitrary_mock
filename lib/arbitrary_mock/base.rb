@@ -1,5 +1,5 @@
 module ArbitraryMock
-  class Base
+  class Base < BasicObject
 
     def initialize(property_hash={})
       @property_hash = property_hash
